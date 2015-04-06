@@ -1,11 +1,12 @@
 /**
  * A simple program to display the next available bus from Carleton.
  * @author Michael Stoneman
- * @version Last modified 2015-02-04
+ * @version Last modified 2015-04-06
  */
 
 import java.util.ArrayList;
 import java.time.LocalDate;
+import java.time.DayOfWeek;
 import java.time.LocalTime;
 
 public class NorthfieldBus {
@@ -17,7 +18,7 @@ public class NorthfieldBus {
 		LocalDate curDate = LocalDate.now();
 		DayOfWeek isSunday = curDate.getDayOfWeek();
 
-		if (isSunday.getValue == 7) { // If it's Sunday,
+		if (isSunday.getValue() == 7) { // If it's Sunday,
 			t0 = LocalTime.of(1,22); // start at 1:22...
 			busTimes.add(t0);
 			for (int i = 0; i < 3; i++) { // ...and do this three times.
