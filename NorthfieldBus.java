@@ -81,6 +81,8 @@ public class NorthfieldBus {
 			int untilTown = timeUntilTown(busTimes);
 			if (untilTown == -1) {
 				System.out.println("--");
+			} else if (untilTown < 10) {
+				System.out.println("0" + untilTown);
 			} else {
 				System.out.println(untilTown);
 			}	
