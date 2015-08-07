@@ -10,7 +10,7 @@ A simple Java program that displays the next time for the bus into Northfield. D
 Compile the java files, then open a shell script in GeekTool and enter the following...
 
 ```bash
-java -cp path/to/NorthfieldBus NorthfieldBus <location>
+java -cp /path/to/NorthfieldBus NorthfieldBus <location>
 ```
 
 ...where the location is either "town" or "olaf". The output will refer to the next bus leaving in that direction.
