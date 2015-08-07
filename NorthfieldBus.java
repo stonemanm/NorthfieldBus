@@ -1,8 +1,10 @@
 /**
  * A simple program to display the next available bus from Carleton.
  * 
+ * Last modified 2015-08-07
  * @author Michael Stoneman
- * @version Last modified 2015-04-06
+ * @version 1.0.0
+ * @license MIT - more info in README.md
  */
 
 import java.util.ArrayList;
